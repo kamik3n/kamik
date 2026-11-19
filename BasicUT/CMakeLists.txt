@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+project(BasicUT)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+include(CTest)
+add_executable(BasicUT src/main.cpp src/Converter.cpp src/Converter.h)
+add_executable(BasicUTRunner tests/testMain.cpp src/Converter.cpp)
+add_test(NAME BasicUTRunner COMMAND BasicUTRunner)

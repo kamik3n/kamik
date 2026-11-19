@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10)
+project(AIP VERSION 1.0)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+include(CTest)
+add_subdirectory(EnvironmentTest)
+add_subdirectory(BasicUT)
+add_subdirectory(Benchmark)
